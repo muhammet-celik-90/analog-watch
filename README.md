@@ -1,10 +1,11 @@
 ## Analog Watch
 
-Live Demo:
+Live Demo: https://analog-watch-bice.vercel.app/modern
 
 ## Images
+![image](https://github.com/muhammet-celik-90/analog-watch/assets/111661381/556c81a0-32f4-48dc-b48e-59853046f08e)
 
-## Açıklama (TR)
+## Açıklama
 
 Bu uygulamayı bir React framework'u olan Next Js kullanarak geliştirdim.
 
@@ -21,7 +22,7 @@ Tüm sorularınız için bana mesaj atmanız yeterli.
 
 İyi çalışmalar dileğiyle.
 
-## Açıklama (EN)
+## Explanation
 
 I developed this application using Next Js, a React framework.
 
