@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Analog Watch
 
-## Getting Started
+Live Demo:
 
-First, run the development server:
+## Images
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Açıklama (TR)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Bu uygulamayı bir React framework'u olan Next Js kullanarak geliştirdim.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Uygulamamda şimdilik 2 farklı stilde saat vardır. Bunları 'classic' ve 'modern' sayfaları olarak ayırdım.
+Ana sayfadan bu sayfalara bağlantı verdim.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Tüm stillemeleri kendim yaptım. Herhangi bir CSS framework'ü kullanmadım. Stillendirme için https://neumorphism.io/ adresinden faydalandım.
 
-## Learn More
+Saat bilgilerini ve saat bilgilerine göre çubukların açılarını hesaplayıp çekmek için bir fonksiyon oluşturdum (utils/getWatchInfos.js) ve sayfalara bilgileri buradan çekip sayfa içinde bunları state'lere attım.
 
-To learn more about Next.js, take a look at the following resources:
+İlerleyen zamanlarda vaktim olursa yeni stiller eklemeyi düşünüyorum. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tüm sorularınız için bana mesaj atmanız yeterli. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+İyi çalışmalar dileğiyle.
 
-## Deploy on Vercel
+## Açıklama (EN)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I developed this application using Next Js, a React framework.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+There are currently 2 different styles of clocks in my application. I divided these into 'classic' and 'modern' pages. I linked to these pages from the home page.
+
+I did all the styling myself. I didn't use any CSS framework. I used https://neumorphism.io/ for styling.
+
+I created a function (utils/getWatchInfos.js) to calculate and capture the time information and the angles of the bars according to the time information, and I pulled the information from there to the pages and threw them into the states within the page.
+
+I plan to add new styles in the future if I have time.
+
+For all your questions, just send me a message.
+
+Wishing you good work.

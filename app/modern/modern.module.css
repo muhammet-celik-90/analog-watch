@@ -1,0 +1,139 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+    --marginSecond: 30px;
+    --marginMinute: 30px;
+    --marginHour: 30px;
+    --marginDigit: 15px;
+    --transformOrigin: right center;
+}
+
+.floor {
+    width: var(--widthFloor);
+    height: var(--heightFloor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #403d3d, #363333);
+    box-shadow:  5px 5px 17px #2a2828,
+             -5px -5px 17px #4e4a4a;
+}
+
+.area {
+    width: inherit;
+    height: 10px;
+}
+
+.second {
+    width: calc(var(--widthLines) - var(--marginSecond));
+    height: 5px;
+    border-radius: 25% 0 0 25%;
+    margin-left: var(--marginSecond);
+    transform-origin: var(--transformOrigin);
+    transform: rotate(10deg);
+    position: absolute;
+    z-index: 3;
+}
+
+.secondDigit {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: -12.5px;
+    border-radius: 50%;
+    background-color: crimson;
+    position: inherit;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.minute {
+    width: calc(var(--widthLines) - var(--marginMinute));
+    height: 5px;
+    border-radius: 20px;
+    margin-left: var(--marginMinute);
+    transform-origin: var(--transformOrigin);
+    transform: rotate(40deg);
+    position: absolute;
+    z-index: 2;
+}
+
+.minuteDigit {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: -12.5px;
+    border-radius: 50%;
+    background-color: #F7CB65;
+    color: var(--colorBg);
+    position: inherit;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour {
+    width: calc(var(--widthLines) - var(--marginHour));
+    height: 5px;
+    border-radius: 20px;
+    margin-left: var(--marginHour);
+    transform-origin: var(--transformOrigin);
+    transform: rotate(30deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.hourDigit {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: -12.5px;
+    border-radius: 50%;
+    background-color: #C8F9FF;
+    color: var(--colorBg);
+    position: inherit;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.digit {
+    width: calc(var(--widthLines) - var(--marginDigit));
+    height: 5px;
+    border-radius: 20px;
+    margin-left: var(--marginDigit);
+    transform-origin: var(--transformOrigin);
+    position: absolute;
+    z-index: 5;
+}
+
+.points {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.innerHour {
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

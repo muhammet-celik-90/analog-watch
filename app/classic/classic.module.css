@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+    --marginSecond: 30px;
+    --marginMinute: 50px;
+    --marginHour: 80px;
+    --marginDigit: 15px;
+    --transformOrigin: right center;
+}
+
+.floor {
+    width: var(--widthFloor);
+    height: var(--heightFloor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #585555;
+    box-shadow: inset 11px 11px 38px #393737,
+            inset -11px -11px 38px #777373;
+}
+
+.area {
+    width: inherit;
+    height: 10px;
+}
+
+.second {
+    width: calc(var(--widthLines) - var(--marginSecond));
+    height: 5px;
+    border-radius: 50% 0 0 50%;
+    background-color: #FE214F;
+    margin-left: var(--marginSecond);
+    transform-origin: var(--transformOrigin);
+    transform: rotate(10deg);
+    position: absolute;
+    z-index: 3;
+}
+.minute {
+    width: calc(var(--widthLines) - var(--marginMinute));
+    height: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: var(--marginMinute);
+    transform-origin: var(--transformOrigin);
+    transform: rotate(40deg);
+    position: absolute;
+    z-index: 2;
+}
+.hour {
+    width: calc(var(--widthLines) - var(--marginHour));
+    height: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: var(--marginHour);
+    transform-origin: var(--transformOrigin);
+    transform: rotate(30deg);
+    position: absolute;
+    z-index: 1;
+}
+.digit {
+    width: calc(var(--widthLines) - var(--marginDigit));
+    height: 5px;
+    border-radius: 20px;
+    margin-left: var(--marginDigit);
+    transform-origin: var(--transformOrigin);
+    position: absolute;
+    z-index: 5;
+}
+
+.points {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #F7CB65;
+}
+
+.dot {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+}
